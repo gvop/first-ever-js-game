@@ -42,30 +42,31 @@ function cardTurn() {
 		if(valueOne === 0) {
 			valueOne += $(this).val();
 			idCheck = $(this).attr('id')  
-			console.log(valueOne + " first card")
 			cardOne = $(this)
+
 		}else {
+
 				attempts += 1
 				$(".attempts").html(attempts)
 				cardTwo = $(this);
 				valueTwo += $(this).val();
-				console.log(valueTwo + " second card");
+
 				if(valueOne === valueTwo){
-					console.log("Good");	
+
 					score += 10; 
 					cardOne.delay( 300 ).fadeTo( 400, 0 )
 					cardTwo.delay( 300 ).fadeTo( 400, 0 )
+
 					if(score === 80){
 						gameCheck = false;
-
 						$('.overlay').show();
-
 					}
+
 					$(".score").html(score)
 					valueOne = 0;
 					valueTwo = 0;
+
 				} else {
-					console.log("Wrong");
 					valueOne = 0;
 					valueTwo = 0;
 					cards.delay( 600 ).fadeOut( 400 )
@@ -145,8 +146,9 @@ function cardDown () {
 	var qI = Math.floor((Math.random() * lenght) + 0);
 	var cardValue = cards[qI].value;
 	var cardClass = cards[qI].class;
+	
 	listSec.append("<li class= 'card' value=" + cardValue + "><h3 class='cards " + cardClass + "'" + "></h3></li>")
-	console.log('they are hidden');
+
 	usedCards.push(cards[qI]);
 	cards.splice(qI, 1);
 	var cardsTwo= $('.cards');
