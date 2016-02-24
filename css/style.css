@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
+
+
+
+* {
+	box-sizing:border-box
+
+}
+
+body {
+	position:absolute;
+	text-align:center;
+	z-index:-1;
+	background-image:url(../img/background.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-color: #fddb5f;
+}
+
+.card {
+	vertical-align:top;
+	display:inline-block;
+	font-family: 'Lobster', cursive;
+	font-size:4vw;
+	width: 22vw;
+    height: 22vw;
+	margin: 1vw;
+	border: solid 7px #d5e0e6;
+		background-color: #d5e0e6;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.2) 35px, rgba(255,255,255,.2) 70px);
+	overflow:hidden;
+	box-shadow: 2px 2px 2px 1px #8E8E8E;
+	border-radius:15px;
+
+
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fived,
+.sixed,
+.sevend,
+.eighted {
+	margin:0;
+	padding-bottom:21vw;
+	background-size:cover;
+	background-position:center;
+}
+
+.first {
+	background-image:url(../img/sunglasses.png);
+
+}
+
+.second {
+	background-image:url(../img/stearingwheel.png);
+	
+}
+
+.third {
+	background-image:url(../img/slippers.png);
+	
+}
+
+.fourth {
+	background-image:url(../img/sun.png);
+	
+}
+
+.fived {
+	background-image:url(../img/icecream.png);
+	
+}
+
+.sixed {
+	background-image:url(../img/uberella.png);
+	background-size:cover;
+}
+
+.sevend {
+	background-image:url(../img/photo_camera.png);
+	
+}
+
+.eighted {
+	background-image:url(../img/ball.png);
+	
+}
+
+
+#shuffel { 
+	display:inline-block;
+	font-family: 'Lobster', cursive;
+	font-size:3vw;
+	width: 22vw;
+    height: 8vw;
+	margin: 1vw 1vw 3vw;
+	padding: 2vw 1vw;
+	background-color: #d5e0e6;
+	box-shadow: 2px 2px 2px 1px #8E8E8E;
+
+}
+
+
+.overlay,
+.overlayStart{
+	position:fixed;
+	width:70vw;
+	height:65vw;	
+	margin: 0 auto;
+	top: 2vw;
+    left:0;
+    right:0;
+	z-index:9999;
+	background:rgba(0,0,0,.8);
+	border-radius:15px;
+}
+
+.overlay {
+		background-color:transparent;
+		top: 30vw;
+
+}
+
+.overlayStart h2,
+.overlayStart h3 {
+	font-size:3vw;
+	letter-spacing:.2vw;
+	display:block;
+	font-family: 'Lobster', cursive;
+	color:white;
+}
+
+.overlayStart h2 {
+	font-size:5vw;
+	margin-bottom:0px;
+	letter-spacing:.2vw;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size:6vw;
+	margin-bottom:0;
+	text-shadow: 2px 12px 40px white;;
+}
+
+
+.overlay h1 {
+	font-family: 'Lobster', cursive;
+	font-size:12vw;	
+	color: black;
+	text-shadow: 2px 12px 40px white;;
+}
+
+.overlay h2 {
+	color:black;
+	text-shadow: 2px 12px 40px white;;
+}
+
+
+#winner h1 {
+	color:white;
+}
+
+h2 {
+	display:inline-block;
+	font-size:4vw;
+	font-family: 'Black Ops One', cursive;
+	
+}
+
+#exit {
+	padding-left:5vw;
+}
+
+#startButton {
+	font-size:4vw;	
+}
+
+
+input {
+	text-align:center;
+	font-size:2vw;
+	padding:.5vw;
+	border-radius:5px;
+}
+
+.score {
+	margin-right: 5px;
+	
+}
+
+#startButton,
+li {
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
