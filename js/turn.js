@@ -42,11 +42,11 @@ function cardTurn() {
 							idCheck = $(this).attr('id')  
 							console.log(valueOne + " first card")
 							cardOne = $(this)
-						//} else {
-						//if (0 === 0)
-						//(idCheck === $(this).attr('id')) 
-							//{ 
-							//console.log("you cant take the same card twice")	
+						} else {
+						if (0 === 0)
+						(idCheck === $(this).attr('id')) 
+							{ 
+							alert("you cant take the same card twice")	
 							} else {
 								attempts += 1
 								$(".attempts").html(attempts)
@@ -72,9 +72,9 @@ function cardTurn() {
 										valueOne = 0;
 										valueTwo = 0;
 										cards.delay( 600 ).fadeOut( 400 )
-								}
+								};
 						
-				}
-		})
-}
+				};
+		});
+};
 

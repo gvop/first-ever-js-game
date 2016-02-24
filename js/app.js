@@ -73,7 +73,7 @@ function cardDown () {
 		var cardsTwo= $('.cards');
 }
 
-//FUNCTION TO PUT THE CARDS BACK IN THE OBJECY
+//FUNCTION TO PUT THE CARDS BACK IN THE OBJECT
 function cardsBack(){
 	i=0
 	while(i !== 16) {
